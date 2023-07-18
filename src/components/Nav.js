@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 
 const Nav = ({ state, setState }) => {
-  window.addEventListener("resize", function checkSize() {
-    if (this.window.innerWidth > 1440) {
+  function checkSize() {
+    if (window.innerWidth > 1420) {
       setState(true);
     } else {
       setState(false);
     }
-  });
+  }
+  window.addEventListener("resize", () => checkSize());
+  window.addEventListener("load", () => checkSize());
 
   const handleState = () => {
     if (window.innerWidth < 1440) setState(false);
