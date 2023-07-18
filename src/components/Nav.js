@@ -1,19 +1,16 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = ({ state, setState }) => {
-  function checkSize() {
-    if (window.innerWidth > 1420) {
-      setState(true);
-    } else {
-      setState(false);
-    }
-  }
-  window.addEventListener("resize", () => checkSize());
-  window.addEventListener("load", () => checkSize());
+  window.addEventListener("resize", () => handleState());
 
   const handleState = () => {
     if (window.innerWidth < 1440) setState(false);
+    else setState(true);
   };
+  useEffect(() => {
+    handleState();
+  }, []);
 
   return (
     <>

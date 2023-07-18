@@ -16,7 +16,9 @@ const Header = () => {
       <div className="h-full flex items-center ">
         <button
           type="button"
-          onClick={() => setState(true)}
+          onClick={() => {
+            if (window.innerWidth < 1440) setState(true);
+          }}
           className="lg:hidden mt-2"
         >
           <FontAwesomeIcon
