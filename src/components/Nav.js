@@ -38,14 +38,20 @@ const Nav = ({ state, setState }) => {
 
             <ul className="lg:flex lg:justify-around">
               <li className="mb-6 ml-4 text-2xl">
-                <Link to="/">Collections </Link>
+                <Link to="/" className="text-black dark:text-white">
+                  Collections
+                </Link>
               </li>
 
               <li className="mb-6 ml-4 text-2xl">
-                <Link to="/about">About </Link>
+                <Link to="/about" className="text-black dark:text-white">
+                  About
+                </Link>
               </li>
               <li className="mb-6 ml-4 text-2xl">
-                <Link to="/contact">Contact </Link>
+                <Link to="/contact" className="text-black dark:text-white">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

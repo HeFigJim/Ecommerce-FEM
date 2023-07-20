@@ -13,7 +13,10 @@ const Footer = () => {
         Frontend Mentor
       </a>
       . Coded by{" "}
-      <a href="/" className="text-green-300 hover:brightness-95">
+      <a
+        href="https://hefigjim.com"
+        className="text-green-300 hover:brightness-95"
+      >
         HeFigJim
       </a>
       .

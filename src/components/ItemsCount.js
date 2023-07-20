@@ -14,7 +14,7 @@ const ItemsCount = ({ id, inCart }) => {
   } = useContext(ProductContext);
 
   return (
-    <div className="text-black w-full my-[16px] flex justify-between items-center rounded px-1 bg-[#F6F8FD]">
+    <div className="text-black w-full my-[16px] flex justify-between items-center rounded px-1 bg-slate-300 dark:bg-[#F6F8FD]">
       <button
         type="button"
         className="text-[#FF7E1B]"

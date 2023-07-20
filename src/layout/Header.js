@@ -24,7 +24,7 @@ const Header = () => {
           <FontAwesomeIcon
             icon={faBars}
             size="xl"
-            className="text-white hover:text-lime-300"
+            className="text-black dark:text-white hover:text-lime-300"
           />
         </button>
 
@@ -42,7 +42,7 @@ const Header = () => {
           <FontAwesomeIcon
             icon={faCartShopping}
             size="xl"
-            className="text-white group-hover:text-lime-300"
+            className="text-slate-400 dark:text-white group-hover:text-lime-300"
           />
 
           <div className="ml-2">{totalItems}</div>

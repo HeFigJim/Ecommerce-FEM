@@ -45,7 +45,7 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="w-34 ml-auto mb-24 pb-2 border-b-2 border-neonGreen tracking-widest hover:text-neonGreen"
+            className="w-34 ml-auto mb-24 pb-2 border-b-2 border-black tracking-widest hover:text-neonGreen"
           >
             SEND MESSAGE
           </button>
