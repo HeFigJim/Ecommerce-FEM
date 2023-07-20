@@ -20,7 +20,7 @@ const Nav = ({ state, setState }) => {
           id="nav"
           className="fixed left-0 top-0 w-full h-full bg-[rgba(0,0,0,0.4)] lg:bg-transparent lg:relative"
         >
-          <div className="h-full w-96  absolute text-2xl text-slate-600 bg-white top-0 lg:top-[1.75rem] lg:left-1/2 lg:-translate-x-2/3 lg:w-[38rem] lg:h-7 lg:bg-transparent lg:text-white ">
+          <div className="h-full w-96  absolute text-2xl text-slate-600 bg-white top-0 lg:top-[1.75rem] lg:left-1/2 lg:-translate-x-2/3 lg:w-[38rem] lg:h-7 lg:bg-transparent dark:text-white ">
             <button type="button" className="lg:hidden group">
               <svg
                 width="30"
@@ -38,18 +38,18 @@ const Nav = ({ state, setState }) => {
 
             <ul className="lg:flex lg:justify-around">
               <li className="mb-6 ml-4 text-2xl">
-                <Link to="/" className="text-black dark:text-white">
+                <Link to="/" className="text-black lg:dark:text-white">
                   Collections
                 </Link>
               </li>
 
               <li className="mb-6 ml-4 text-2xl">
-                <Link to="/about" className="text-black dark:text-white">
+                <Link to="/about" className="text-black lg:dark:text-white">
                   About
                 </Link>
               </li>
               <li className="mb-6 ml-4 text-2xl">
-                <Link to="/contact" className="text-black dark:text-white">
+                <Link to="/contact" className="text-black lg:dark:text-white">
                   Contact
                 </Link>
               </li>
